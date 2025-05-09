@@ -20,15 +20,18 @@ font-family: var(--font);
 background-color: var(--secondary-color);
 color: var(--primary-color);
 line-height: 1.7;
+margin: 0px;
 }
 
 header {
 background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); 
 color: white;
-padding: 2rem 1rem;
+padding: 2rem 0rem;
 text-align: center;
 box-shadow: 0 4px 8px var(--shadow);
+margin: 0px;
 }
+
 
 header h1 {
 font-size: 3rem;
@@ -219,4 +222,24 @@ font-style: normal;
 h2 {
 font-family: 'Barrio', sans-serif;
 font-weight: bold;
+}
+
+nav {
+background-color:#1c1c1c;
+color:#f4f6f8;
+justify-content: space-between; 
+padding: 1rem;
+display: flex;
+top: 0;
+width: 100%;
+z-index: 1000;
+flex-wrap: wrap;
+gap: 10px;
+margin-bottom: -32px;
+}
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+
 }
