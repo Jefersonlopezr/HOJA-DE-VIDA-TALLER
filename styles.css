@@ -83,6 +83,7 @@ gap: 2rem;
 
 section {
 margin-bottom: 1.5rem;
+box-shadow: #1c1c1c 0px 0px 7px 0px;
 }
 
 section h2 {
@@ -236,10 +237,16 @@ z-index: 1000;
 flex-wrap: wrap;
 gap: 10px;
 margin-bottom: -32px;
+justify-content: space-around;
+box-shadow: #130835 0px 0px 8px 3px;
 }
 
 nav a {
 color: #ffffff;
 text-decoration: none;
+}
 
+nav a:hover {
+text-decoration: underline;
+scale: 1.2;
 }
