@@ -84,6 +84,7 @@ gap: 2rem;
 section {
 margin-bottom: 1.5rem;
 box-shadow: #1c1c1c 0px 0px 7px 0px;
+padding: 1rem;
 }
 
 section h2 {
@@ -97,6 +98,7 @@ margin-bottom: 0.5rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 1.5rem;
+
 }
 
 .grid-three {
@@ -200,6 +202,15 @@ transform: scale(1.1);
 transition: transform 0.3s ease;
 }
 
+.image-6{
+width: 200px;
+height: 250px;
+}
+
+.image-6:hover {
+transform: scale(1.1);
+transition: transform 0.3s ease;
+}
 
 @font-face {
 font-family:'Chill';
@@ -249,4 +260,30 @@ text-decoration: none;
 nav a:hover {
 text-decoration: underline;
 scale: 1.2;
+}
+
+.carousel{
+width: 100%;
+height: 100%;
+position: relative;
+overflow: hidden;
+}
+.carousel-images {
+display: flex;
+width: 60%;
+animation: deslizar 10s infinite;
+}
+
+.carousel-images img {
+width: 100%;
+flex: 0 0 100%;
+height: auto;
+object-fit: contain;
+}
+@keyframes deslizar {
+0%   { transform: translateX(0%); }
+25%  { transform: translateX(-70%); }
+50%  { transform: translateX(-180%); }
+75%  { transform: translateX(-230%); }
+100% { transform: translateX(0%); }
 }
